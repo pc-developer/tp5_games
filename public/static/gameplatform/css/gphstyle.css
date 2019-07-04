@@ -1,0 +1,402 @@
+/*  gphstyle css Document  */
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    font-family: "SimSun";
+    font-size: 18px;
+    overflow: hidden;
+    background: #EFEFEF;
+}
+a{
+    color: #000;
+}
+#login_container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/games/public/static/gameplatform/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#title{
+    margin: 10px 0 40px 10px;
+    width: 370px;
+    height: 60px;
+    float: left;
+}
+.rf_btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 25px;
+    line-height: 25px;
+}
+#log_state{
+    margin: 30px 10px 0 10px;
+    width: 35%;
+    clear: both;
+}
+#log_state_text{
+    margin: 15px 0 0 30px;
+}
+#foo{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    background: #EFEFEF;
+}
+#footer_hr{
+    margin: 0 10px 0 10px;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #333;
+    text-align: left;
+}
+#footer_text{
+    margin-top: 5px;
+    font-family: "仿宋";
+    font-size: 16px;
+    text-align: center;
+}
+.form{
+    position: absolute;
+    width: 350px;
+    height: 380px;
+    top: 18%;
+    left: 40%;
+    border-radius: 20px;
+    background: RGBA(0, 0, 0, 0.1);
+}
+.small_title{
+    width: 350px;
+    height: 60px;
+    line-height: 60px;
+}
+.tab{
+    width: 350px;
+    height: 260px;
+}
+.outinput{
+    width: 350px;
+    height: 190px;
+}
+.ininput{
+    width: 270px;
+    height: 190px;
+}
+.add_ico{
+    margin-bottom: 10px;
+    width: 262px;
+    height: 37px;
+    border: 1px solid #666;
+}
+.in_ico{
+    width: 39px;
+    height: 36px;
+    text-align: center;
+    line-height: 35px;
+    color: #666;
+    float: left;
+    border-right: 1px solid #666;
+}
+.in{
+    margin-bottom: 0px;
+    width: 220px;
+    height: 35px;
+    font-size: 18px;
+    border: none;
+    float: right;
+    background: transparent;
+}
+#add_ico{
+    margin-bottom: 10px;
+    width: 262px;
+    height: 37px;
+}
+.captcha_con{
+    width: 155px;
+    height: 37px;
+    line-height: 35px;
+    float: left;
+    border: 1px solid #666;
+}
+.captcha_con input{
+    width: 113px;
+    float: right;
+    border: none;
+    background: transparent;
+}
+.captcha_con img{
+    float: right;
+}
+.lrf_bt{
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    color: #000;
+    line-height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #2828ED;
+}
+.for_bt{
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: left;
+}
+.forget_bt{
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    color: #666;
+    line-height: 30px;
+    border-radius: 30px;
+    background: RGBA(0, 0, 0, 0.1);
+}
+.forget_tip{
+    font-size: 30px;
+    color: RGBA(255, 0, 0, 1);
+}
+.home_bt{
+    position: absolute;
+    width: 109px;
+    height: 25px;
+    bottom: 5px;
+    left: 120px;
+}
+#home_bt{
+    padding: 4px 40px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    background: #2828DE;
+}
+.option{
+    width: 100%;
+    height: 35px;
+    background: #DEDEDE;
+}
+.selection{
+    
+    height: 35px;
+    line-height: 35px;
+    float: left;
+}
+.ico{
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+}
+.player_lr{
+    height: 35px;
+    line-height: 35px;
+    float: right;
+}
+.player{
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #666;
+    line-height: 35px;
+    float: right;
+}
+.player_logout{
+    display: none;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    height: 70px;
+    float: left;
+    background: RGBA(0, 0, 0, 0.1);
+}
+.player_logout ul li a{
+    display: block;
+}
+.home_lr{
+    height: 35px;
+    margin-right: 10px;
+    float: right;
+    line-height: 35px;
+}
+#game_body{
+    position: absolute;
+    margin: 10px;
+    width: 98%;
+    height: 84%;
+}
+#game_list{
+    width: 24%;
+    height: 97%;
+    float: left;
+    white-space: nowrap;  /* -- 禁止段落自动换行 -- */
+}
+#list_title{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+}
+#game_list-1{
+    width: 100%;
+    float: left;
+    white-space: nowrap;
+    overflow: auto;
+}
+/* 定义滚动条 */
+.game_list-1::-webkit-scrollbar{
+    width: 10px;
+    height: 10px; 
+}
+/* 正常时滑块的样式 */
+.game_list-1::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px RGBA(0, 0, 0, 0.1);
+    background: RGBA(0, 0, 0, 0.05);
+}
+/* 鼠标悬浮在该类指向的控件上时滑块的样式 */
+.game_list-1:hover::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 RGBA(0, 0, 0, 0.1);
+    background-color: RGBA(0, 0, 0, 0.2);
+}
+/* 鼠标悬浮在滑块上时的样式 */
+.game_list-1::-webkit-scrollbar-thumb:hover{
+    -webkit-box-shadow: inset 1px 1px 0 RGBA(0, 0, 0, 0.1);
+    background-color: RGBA(0, 0, 0, 0.4);
+}
+/* 正常时轨道样式 */
+.game_list-1::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px RGBA(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+/* 鼠标悬浮在该类指向的控件上时轨道的样式 */
+.game_list-1:hover::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px RGBA(0, 0, 0, 0.4);
+    background-color: RGBA(0, 0, 0, 0.01);
+}
+/* 滑动条右下角的样式 */
+.game_list-1::-webkit-scrollbar-corner{
+    background: #999;
+}
+.link_options li{
+    height: 25px;
+    line-height: 25px;
+    clear: both;
+}
+#content{
+    width: 75%;
+    height: 97%;
+    float: right;
+    overflow: auto;
+    border-left: 1px solid #999;
+}
+.content{
+    width: 100%;
+    height: 250px;
+}
+.per_body{
+    width: 100%;
+    height: 400px;
+    background-image: url("/games/public/static/gameplatform/images/info_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.per_body #fill{
+    height: 60px;
+}
+.usr{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    color: #666;
+}
+.user_info{
+    margin-top: 20px;
+    width: 450px;
+}
+/* -- 下划线自适应文字宽度 -- */
+.user_in{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.user_in p{
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+    border-bottom: 1px solid #444;
+    white-space: nowrap;  /* 禁止段落自动换行 */
+}
+.per_links{
+    margin: 30px 20px 0px 20px;
+}
+.per_links a{
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #999;
+}
+.change_body{
+    margin: 20px 10px 0px 10px;
+}
+.change_links{
+    position: fixed;
+    width: 150px;
+    height: 180px;
+    left: 10px;
+    top: 50px;
+    background: blue;
+}
+.change_btn{
+    margin: 0px 5px 10px 5px;
+    font-size: 22px;
+    border-bottom: 1px solid #999;
+    cursor: pointer;
+}
+.display_yn_btn{
+    float: right;
+    margin-right: 3px;
+    font-size: 34px;
+}
+.change_ininput{
+    margin-top: 20px;
+    margin-left: 200px;
+}
+.change_ico{
+    display: block;
+    height: 150px;
+    background: blue;
+}
+.upload_ico{
+    width: 90px;
+    height: 90px;
+    color: RGBA(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 90px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    cursor: pointer;
+    float: left;
+}
+.upload_tip{
+    line-height: 90px;
+    display: none;
+}
+.change_username{
+    display: none;
+}
+.change_passwd{
+    display: none;
+}
+.change_email{
+    display: none;
+}
+

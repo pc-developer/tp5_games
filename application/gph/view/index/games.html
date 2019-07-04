@@ -1,0 +1,27 @@
+  {include file="index/header,index/menu"}
+  <div id="game_body">
+    <div id="game_list">
+      <div id="list_title"><h4>游戏列表</h4></div>
+      <div id="game_list-1" class="game_list-1">
+        <nav class="link_options">
+          <ul>
+            <li><a href="{:url('games?game_name=2048')}">{$game_list[0][0]}</a></li>
+            <li><a href="{:url('games?game_name=五子棋')}">{$game_list[0][1]}</a></li>
+            <li><a href="{:url('games?game_name=别踩白块')}">{$game_list[0][2]}</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div id="content">
+      <div class="content">
+        {switch name="$game_name"}
+            {case value="$game_list[0][0]"}{include file="index/npg"/}{/case}
+            {case value="$game_list[0][1]"}{include file="index/goband"/}{/case}
+            {case value="$game_list[0][2]"}{include file="index/white_block"/}{/case}
+            {default/}
+        {/switch}
+      </div>
+    </div>
+  </div>
+  {include file="index/footer"/}
+  

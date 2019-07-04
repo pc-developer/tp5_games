@@ -1,0 +1,13 @@
+  {load file="/games/public/static/gameplatform/games/css/white_block.css"/}
+  <h3>别踩白块</h3>
+  <h5 id="ss">
+    分数: <span id="socre">0</span>
+  </h5>
+  <h5>
+    时间: <span id="times"></span>
+  </h5>
+  <canvas id="games" onmousedown="onDown();"></canvas>
+  <input id="start" type="button" value="开始" onclick="start()"/>
+  <input id="stop" type="button" value="停止" onclick="stop()"/>
+  <input id="reset" type="button" value="重置" onclick="reset()"/>
+  {load file="/games/public/static/gameplatform/games/js/white_block.js"/}

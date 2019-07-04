@@ -1,0 +1,51 @@
+  {include file="gph@index/header,index/menu"/}
+  {css href="/games/public/static/gameplatform/css/gpa.css"/}
+  <div class="gpa_fill">
+    <div id="search">
+      <div id="in_search">
+        <input id="search_content" type="text" name="search" placeholder="搜索...">
+        <i class="fa fa-search fa-2x search_ico"></i>
+        <input id="search_btn" type="submit" value="搜索">
+      </div>
+    </div>
+    <div class="info_tab">
+      <p class="per_coun">注册总人数: <strong>{$count}</strong>人</p>
+      <table>
+        <tr class="tab_title"><th colspan="6"><h3 class="subheader">用户信息表</h3></th></tr>
+        <tr class="tab_small_title">
+          <th><h4 class="subheader">
+            <small>用户名</small>
+          </h4></th>
+          <th><h4 class="subheader">
+            <small>密码</small>
+          </h4></th>
+          <th><h4 class="subheader">
+            <small>邮箱</small>
+          </h4></th>
+          <th><h4 class="subheader">
+            <small>注册时间</small>
+          </h4></th>
+          <th><h4 class="subheader">
+            <small>身份</small>
+          </h4></th>
+          <th><h4 class="subheader">
+            <small>状态</small>
+          </h4></th>
+        </tr>
+        {volist name="list" id="info" mod="2"}
+          <tr {eq name="mod" value="0"} style="background: #B6DBDE;" {else/} style="background: #B6E0FA" {/eq}>
+            <td>{$info.username}</td>
+            <td>{$info.password}</td>
+            <td>{$info.email}</td>
+            <td>{$info.registertime}</td>
+            <td>{$info.indetity}</td>
+            <td>{$info.status}</td>
+          </tr>
+        {/volist}
+      </table>
+    </div>
+    {$page}
+  </div>
+  {js href="/games/public/static/gameplatform/js/gpa.js"/}
+  {include file="gph@index/footer"/}
+  

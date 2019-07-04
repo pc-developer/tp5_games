@@ -1,0 +1,27 @@
+  <h3 class="small_title" align="center">用户注册</h3>
+  <form method="post" action="{:url('register')}">
+    <div class="tab" align="center">
+      <div class="outinput">
+        <div class="ininput">
+          <div class="add_ico">
+            <i class="fa fa-user fa-2x in_ico"></i>
+            <input class="in" type="text" name="username" size="15" maxlength="15" placeholder="用户名(15字符内)">
+          </div>
+          <div class="add_ico">
+            <i class="fa fa-lock fa-2x in_ico"></i>
+            <input class="in" type="password" name="passwd" size="16" maxlength="16" placeholder="密码(6-16位)">
+          </div>
+          <div class="add_ico">
+            <i class="fa fa-lock fa-2x in_ico"></i>
+            <input class="in" type="password" name="passwd2" size="16" maxlength="16" placeholder="确认密码">
+          </div>
+          <div class="add_ico">
+            <i class="fa fa-envelope fa-2x in_ico"></i>
+            <input class="in" type="text" name="email" size="16" maxlength="100" placeholder="邮箱">
+          </div>
+        </div>
+      </div>
+      <input class="lrf_bt" type="submit" value="注册">
+      <div class="for_bt"><a href="{:url('index?sta=forget')}">忘记密码?</a></div>
+    </div>
+  </form>

@@ -1,0 +1,46 @@
+  {include file="gph@index/header,index/menu"/}
+  {css href="/games/public/static/gameplatform/css/gpa.css"/}
+  <div class="gpa_fill">
+    <div class="change_body">
+      <div class="change_links">
+        <div class="change_btn change_ico_btn">头像<i class="fa fa-angle-down display_yn_btn ico_angle"></i></div>
+        <div class="change_btn change_username_btn">用户名<i class="fa fa-angle-right display_yn_btn username_angle"></i></div>
+        <div class="change_btn change_password_btn">密码<i class="fa fa-angle-right display_yn_btn password_angle"></i></div>
+        <div class="change_btn change_email_btn">邮箱<i class="fa fa-angle-right display_yn_btn email_angle"></i></div>
+      </div>
+      <div class="change_ininput">
+      <form method="post" enctype="multipart/form-data" action="#">
+      <div class="change_ico">
+        <i class="fa fa-plus-square-o fa-5x upload_ico" title="点击添加"></i><div class="upload_tip">点击添加</div>
+      </div>
+      </form>
+      <form method="post" onsubmit="return change_check()" action="{:url('changeinfo')}">
+        <div class="add_ico change_username">
+            <i class="fa fa-user fa-2x in_ico"></i>
+            <input class="in" type="text" name="username" size="15" maxlength="15" placeholder="用户名(15字符内)">
+          </div>
+          <div class="add_ico change_passwd">
+            <i class="fa fa-lock fa-2x in_ico"></i>
+            <input class="in" type="password" name="passwd" size="16" maxlength="16" placeholder="密码(6-16位)">
+          </div>
+          <div class="add_ico change_passwd">
+            <i class="fa fa-lock fa-2x in_ico"></i>
+            <input class="in" type="password" name="passwd2" size="16" maxlength="16" placeholder="确认密码">
+          </div>
+          <div class="add_passwd_ico change_passwd">
+            <div class="captcha_con">
+              <i class="fa fa-legal fa-2x in_ico"></i>
+              <input class="captcha_in" type="text" name="captcha" placeholder="验证码">
+            </div>
+            <img src="{:captcha_src()}" alt="captcha" class="captcha" title="点击刷新"/>
+          </div>
+          <div class="add_ico change_email">
+            <i class="fa fa-envelope fa-2x in_ico"></i>
+            <input class="in" type="text" name="email" size="16" maxlength="100" placeholder="邮箱">
+          </div>
+          <input type="submit" value="提交"/>
+      </form>
+      </div>
+    </div>
+  </div>
+  {include file="gph@index/footer"/}

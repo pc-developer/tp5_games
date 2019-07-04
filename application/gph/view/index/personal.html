@@ -1,0 +1,25 @@
+  {include file="index/header,index/menu"/}
+  <div class="per_body" align="center">
+    <div id="fill"></div>
+    <div class="fa fa-user-circle-o fa-5x usr"></div>
+    <div class="user_info">
+      <div class="user_in">
+        <p>&nbsp;&nbsp;用户名: {$Think.session.valid_user?$Think.session.valid_user:"无"}&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;身份: {$display_info["indetity"]}&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;状态: {$display_info["status"]}&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;邮箱: {$display_info["email"]}&nbsp;&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  {notempty name="Think.session.valid_user"}
+  <div class="per_links">
+    </nav>
+      <ul class="no-bullet">
+        <li><a href="{:url('changeinfo')}">编辑资料</a></li>
+        <li><a href="#">我的游戏</a></li>
+        <li><a href="{:url('sort')}">我的排行</a></li>
+      </ul>
+    </nav>
+  </div>
+  {/notempty}
+  {include file="index/footer"/}

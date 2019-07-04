@@ -1,0 +1,32 @@
+  {include file="index/header"/}
+  <div id="login_container">
+    <div id="title">
+      <img src="/games/public/static/gameplatform/images/ico.jpg"
+           alt="Games Platform" border="0px" align="left"
+           valign="bottom" width="60px" height="40px"/>
+      <h2>&nbsp;Games Platform</h2>
+    </div>
+    <div class="rf_btn">
+      <a href="{:url('index?sta=login')}">登录</a>&nbsp;|
+      <a href="{:url('index?sta=register')}">注册</a>
+    </div>
+    <div id="log_state">
+      <h3>说明: </h3>
+      <p id="log_state_text">多种益智游戏任你玩。</p>
+    </div>
+    <!-- *** 表单切换 *** -->
+    <div class="form">
+      {if condition="$sta eq 'register'"}
+          {include file="index/register"/}
+      {elseif condition="$sta eq 'forget'"/}
+          {include file="index/forget"/}
+      {else/}
+          {include file="index/login"/}
+      {/if}
+      <div class="home_bt">
+        <a id="home_bt" href="{:url('home')}">游客</a>
+      </div>  
+    </div>
+  </div>
+  {load href="/games/public/static/gameplatform/js/index.js"/}
+  {include file="index/footer"/}

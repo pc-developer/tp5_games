@@ -1,0 +1,20 @@
+  <div class="option">
+    <div class="selection">
+      <div class="ico"><img width="40px" height="30px" src="/games/public/static/gameplatform/images/ico.jpg"/></div>
+      <a href="{:url('adminhome')}">首页</a>&nbsp;|
+      <a href="{:url('manege')}">操作管理</a>&nbsp;|
+      <a href="{:url('personal')}">个人中心</a>
+    </div>
+    {notempty name="Think.session.valid_user"}
+      <div class="player_lr">
+        <i class="fa fa-user-circle-o fa-2x player"></i>
+        <div class="player_logout">
+          <ul class="no-bullet dropdown">
+            <li><h6>{$Think.session.valid_user}</h6></li>
+            <li><a href="{:url('logout')}">退出</a></li>
+          </ul>
+        </div>
+      </div>
+    {/notempty}
+  </div>
+  {js href="/games/public/static/gameplatform/js/gphscript.js"/}

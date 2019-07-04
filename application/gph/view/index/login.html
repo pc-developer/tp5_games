@@ -1,0 +1,27 @@
+  <h3 class="small_title" align="center">用户登录</h3>
+  <form method="post" action="{:url('login')}">
+    <div class="tab" align="center">
+      <div class="outinput">
+        <div class="ininput">
+          <div class="add_ico">
+            <i class="fa fa-user fa-2x in_ico"></i>
+            <input class="in" type="text" name="username" value="{$Think.cookie.laster}" placeholder="用户名">
+          </div>
+          <div class="add_ico">
+            <i class="fa fa-lock fa-2x in_ico"></i>
+            <input class="in" type="password" name="passwd" placeholder="密码">
+          </div>
+          <div class="add_passwd_ico">
+            <div class="captcha_con">
+              <i class="fa fa-legal fa-2x in_ico"></i>
+              <input class="captcha_in" type="text" name="captcha" placeholder="验证码">
+            </div>
+            <img src="{:captcha_src()}" alt="captcha" class="captcha" title="点击刷新"/>
+          </div>
+        </div>
+      </div>
+      <input class="lrf_bt" type="submit" value="登录">
+      <div class="for_bt"><a href="{:url('index?sta=forget')}">忘记密码?</a></div>
+    </div>
+  </form>
+  

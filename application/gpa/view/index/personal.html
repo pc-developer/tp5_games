@@ -1,0 +1,21 @@
+  {include file="gph@index/header,index/menu"/}
+  <div class="per_body" align="center">
+    <div id="fill"></div>
+    <div class="fa fa-user-circle-o fa-5x usr"></div>
+    <div class="user_info">
+      <div class="user_in">
+        <p>&nbsp;&nbsp;用户名: {$Think.session.valid_user}&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;身份: {$display_info["indetity"]}&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;状态: {$display_info["status"]}&nbsp;&nbsp;</p>
+        <p>&nbsp;&nbsp;邮箱: {$display_info["email"]}&nbsp;&nbsp;</p>
+      </div>
+    </div>
+  </div>
+  <div class="per_links">
+    <nav>
+      <ul class="no-bullet">
+        <li><a href="{:url('displayChangeForm')}">编辑资料</a></li>
+      </ul>
+    </nav>
+  </div>
+  {include file="gph@index/footer"/}

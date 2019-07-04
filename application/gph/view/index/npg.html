@@ -1,0 +1,32 @@
+  {load href="/games/public/static/gameplatform/games/css/npg.css"/}
+  <p class="npgScore">2048</p> 
+  <p class="npgScore">  
+    分数：<span id="score">0</span>  
+  </p>  
+  <div id="playground">  
+    <div id="c00" class="cell"></div>  
+    <div id="c01" class="cell"></div>  
+    <div id="c02" class="cell"></div>  
+    <div id="c03" class="cell"></div>  
+    <div id="c10" class="cell"></div>  
+    <div id="c11" class="cell"></div>  
+    <div id="c12" class="cell"></div>  
+    <div id="c13" class="cell"></div>  
+    <div id="c20" class="cell"></div>  
+    <div id="c21" class="cell"></div>  
+    <div id="c22" class="cell"></div>  
+    <div id="c23" class="cell"></div>  
+    <div id="c30" class="cell"></div>  
+    <div id="c31" class="cell"></div>  
+    <div id="c32" class="cell"></div>  
+    <div id="c33" class="cell"></div>  
+  </div>  
+  <div id="GameOver"><!-- 半透明遮罩 -->  
+    <p class="npgScore">  
+        游戏结束！<br/>  
+        分数: <span id="final"></span><br>  
+        <a class="npgButton" onclick="game.start()" >再试一次！</a>  
+    </p>  
+  </div> 
+  {load href="/games/public/static/gameplatform/games/js/npg.js"/}
+
